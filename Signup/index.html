@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+
+    <title>Signup</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="registration form">
+            <header>Signup</header>
+            <form action="#" id="signup_form">
+
+                <img class="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500"
+                    src="../Assets/no profile img.jpg" alt="Bordered avatar" id="user-image">
+
+                <input type="file" id="imgfile-input">
+                <h3>Name:</h3>
+                <input type="text" id="firstname" required placeholder="First Name" >
+                <input type="text" id="lastname" required placeholder="Last Name" >
+                <h3>Phone Number:</h3>
+                <input type="number" id="phonenumber" required placeholder="Phone Number" >
+                <h3>E-mail:</h3>
+                <input type="email" id="email" required placeholder="Enter your email" >
+                <h3>Passwrod:</h3>
+                <input type="password" id="password" required placeholder="Create a password" >
+                <input type="password" id="confirmpassword" required placeholder="Confirm your password" >
+                <input type="submit" class="button" value="Signup" id="submit_btn">
+            </form>
+            <div class="signup">
+                <span class="signup">Already have an account?
+                    <a href="../Login/index.html">Login</a>
+                </span>
+            </div>
+        </div>
+    </div>
+   
+    <script src="./script.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+</body>
+
+</html>
