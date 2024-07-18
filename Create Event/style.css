@@ -1,12 +1,8 @@
 /* Import Google font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-
-
-
 :root {
- --theme: rgb(14, 12, 12);
-}
+  --theme: rgb(14, 12, 12);
+ }
 * {
   margin: 0;
   padding: 0;
@@ -15,35 +11,36 @@
 }
 
 body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
   width: 100%;
   background: var(--theme);
+  margin: 0;
 }
 
 .container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   max-width: 430px;
   width: 100%;
   background: #fff;
   border-radius: 7px;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  margin: 20px; /* Add some margin to avoid being too close to the edges */
 }
 
-.login.form {
+.registration.form {
   padding: 2rem;
 }
 
-.login.form header {
+.registration.form header {
   font-size: 2rem;
   font-weight: 500;
   text-align: center;
   margin-bottom: 1.5rem;
 }
 
-.login.form input {
+.registration.form input,#event_description {
   height: 60px;
   width: 100%;
   padding: 0 15px;
@@ -54,22 +51,11 @@ body {
   outline: none;
 }
 
-.login.form input:focus {
-  box-shadow: 0 1px 0 rgb(15, 14, 14);
+.registration.form input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
 }
 
-.login.form a {
-  font-size: 16px;
-  color: #838383;
-  text-decoration: none;
-  font-weight: bolder;
-}
-
-.login.form a:hover {
-  text-decoration: underline;
-}
-
-.login.form input.button {
+.registration.form input.button {
   color: #fff;
   background: var(--theme);
   font-size: 1.2rem;
@@ -80,8 +66,8 @@ body {
   transition: 0.4s;
 }
 
-.login.form input.button:hover {
-  background: rgb(32, 28, 28)
+.registration.form input.button:hover {
+  background: rgb(32, 28, 28);
 }
 
 .signup {
@@ -89,6 +75,18 @@ body {
   text-align: center;
 }
 
-h3{
-  font-size: medium;
+.signup a {
+  font-size: 16px;
+  color: #838383;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+h3 {
+  padding: 5px;
+  font-weight: bolder;
 }

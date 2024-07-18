@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Create Event</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="registration form">
+            <header>Add your Product</header>
+            <a href="../index.html"><i class="fa-solid fa-arrow-left"></i></a>
+            <form action="#" id="createEvent_form">
+                <h3>Product Image:</h3>
+                <input type="file" id="imgfile-input">
+                <h3>Product Title:</h3>
+                <input type="text" id="product_tiltle" required placeholder="Tiltle">
+                <h3>Product Description:</h3>
+                <textarea type="text" id="product_description" required placeholder="Description"></textarea>
+                <h3>Event Location:</h3>
+                <input type="Number" id="product_price" required placeholder="Price">
+        
+                <input type="submit" class="button" value="Add Product" id="createEvent_btn">
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js" type="module"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+</body>
+
+</html>
