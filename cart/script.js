@@ -7,7 +7,7 @@ import {
   deleteDoc,
   getDoc,
   onAuthStateChanged,
-  signOut
+  signOut,
 } from "../utils/utils.js";
 
 const cart_container = document.getElementById("cart_container");
@@ -31,7 +31,7 @@ onAuthStateChanged(auth, (user) => {
     getUserInfo(uid);
     getCartItems(uid);
   } else {
-    login_link.style.display = "inline-block";
+    // login_link.style.display = "inline-block";
     user_img.style.display = "none";
     addProduct_link.style.display = "none";
     myEvents_link.style.display = "none";
